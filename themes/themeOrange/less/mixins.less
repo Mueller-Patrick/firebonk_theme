@@ -63,6 +63,7 @@ body {
     &:hover {
         color: @primary;
     }
+}
 /*Styling for Comment and Like icons*/
 .wall-entry-controls .likeLinkContainer a {
 	color: @heart-color !important;
@@ -178,10 +179,14 @@ body {
     }
 }
 
-  /* Show all comments button */
-  a.show.show-all-link {
+/* Show all comments button */
+a[data-action-click="comment.showMore"] {
     background-color: @primary;
     padding: 4px 8px;
     border-radius: 20px;
     text-align: center;
-  }
+}
+
+div.comment {
+    padding-top: 10px;
+}
